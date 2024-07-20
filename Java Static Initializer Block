@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int breadth = scan.nextInt();
+        int height = scan.nextInt();
+        int area =1;
+        scan.close();
+         try{
+        if(breadth>0 && height>0){
+            area*=breadth*height;
+            System.out.println(area);
+        }
+        else {
+           
+                throw new Exception("java.lang.Exception: Breadth and height must be positive");
+            
+           
+        }
+        }
+         catch(Exception ex){
+                System.out.println(ex.getMessage());
+            }
+    }
+    
+}
